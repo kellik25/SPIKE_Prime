@@ -3,14 +3,14 @@ import time
 
 def peripheral(name): 
     try:
-        p = Yell('Fred', verbose = False)
+        p = Yell('Fred', verbose = True)
         if p.connect_up():
             print('P connected')
             time.sleep(2)
             payload = ''
             for i in range(100):
                 payload += str(i)
-                p.send(payload)#str(i) + chr(i))
+                p.send(payload)
                 if p.is_any:
                     print(p.read())
                 if not p.is_connected:
@@ -26,7 +26,7 @@ def peripheral(name):
                 
 def central(name):   
     try:   
-        L = Listen('Fred', verbose = False)
+        L = Listen('Fred', verbose = True)
         if L.connect_up():
             print('L connected')
             while L.is_connected:

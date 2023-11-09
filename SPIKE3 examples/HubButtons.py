@@ -8,7 +8,7 @@ if fred:
 if fred > 2000:
     print('let go of the button')
     
-btn = {
+btn = { 
     0:'power',
     1:'left',
     2:'right',
