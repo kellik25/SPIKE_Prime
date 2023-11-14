@@ -7,7 +7,7 @@ def peripheral(name):
         if p.connect_up():
             print('P connected')
             time.sleep(2)
-            payload = ''
+            payload = ''  
             for i in range(100):
                 payload += str(i)
                 p.send(payload)
