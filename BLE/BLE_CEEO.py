@@ -3,7 +3,7 @@ import time
 import struct
 import micropython
 micropython.alloc_emergency_exception_buf(128)
-
+ 
 NAME_FLAG = 0x09
 SCAN_RESULT = 5
 SCAN_DONE = 6
