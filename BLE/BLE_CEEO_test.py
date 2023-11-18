@@ -3,7 +3,7 @@ import time
 
 def peripheral(name): 
     try:
-        p = Yell('Fred', verbose = True)
+        p = Yell(name, verbose = True)
         if p.connect_up():
             print('P connected')
             time.sleep(2)
@@ -26,7 +26,7 @@ def peripheral(name):
                 
 def central(name):   
     try:   
-        L = Listen('Fred', verbose = True)
+        L = Listen(name, verbose = True)
         if L.connect_up():
             print('L connected')
             while L.is_connected:
@@ -42,4 +42,4 @@ def central(name):
         print('closing up')
 
 #peripheral('Fred')
-#central('Fred')
+central('goodboy')
