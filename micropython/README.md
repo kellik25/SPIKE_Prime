@@ -1,6 +1,7 @@
 # Running on pure micropython
 This contains my examples of where to go with pure micropython
 
+How to download micropython onto the Spike Prime Hub:
 1. Start with https://micropython.org/download/LEGO_HUB_NO6/
 2. Download (https://micropython.org/resources/firmware/LEGO_HUB_NO6-20240105-v1.22.1.dfu) from the above site
 3. Install dfu-util if not previously installed from: https://dfu-util.sourceforge.net
