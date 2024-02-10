@@ -1,6 +1,6 @@
 #check which of these imports is actually necessary in this file
 import pyb
-import time, math
+import time
 from array import array
 
 class Lights():
