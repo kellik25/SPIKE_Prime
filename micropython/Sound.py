@@ -13,7 +13,6 @@ class Sound():
         self.tim.freq(freq*len(self.buf))
         self.dac.write_timed(self.buf, self.tim, mode=pyb.DAC.CIRCULAR)
 
-        #believe this is for testing purposes?
         fred = pyb.Pin('C10', pyb.Pin.OUT)
         fred.on()
         time.sleep(duration)
