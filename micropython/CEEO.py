@@ -1,6 +1,3 @@
-import pyb
-import time, math
-from array import array
 import Buttons
 import Sound
 import Lights
