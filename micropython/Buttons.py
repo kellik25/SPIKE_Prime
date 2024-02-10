@@ -1,4 +1,3 @@
-#check which of these imports is actually necessary in this file
 import pyb
 import time, math
 from array import array
