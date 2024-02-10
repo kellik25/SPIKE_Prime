@@ -1,9 +1,12 @@
 import Buttons
-import Sound
+from Sound import Sound
 import Lights
 
-l = Lights()
-l.power_led(0,0,1)
-b = Buttons()
-s = Sound()
-s.play(440,1)
+#l = Lights.Lights()
+#l.full_test()
+#l.power_led(0,0,1)
+b = Buttons.Buttons()
+b.read()
+#s = Sound.Sound()
+#s = Sound()
+#s.play(500,2)
