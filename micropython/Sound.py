@@ -33,3 +33,4 @@ class Sound():
         #this would be something like: "print(Sound.Sound.play.__doc__)"
         #could also create class that is just functions of helper functions that are full with string explanations
             #downside is that I would need to update this every time a new function is made which could get annoying
+            #this also means you wouldn't be able to use the built-in help function at all while this program is in use 
