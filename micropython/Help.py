@@ -20,4 +20,18 @@ def help(name):
         This function returns the current state of the buttons as 1s and 0s in a list
         [left, center, right, bluetooth]
         ''')
-    
+    elif name == "set":
+    elif name == "pixel_set":
+    elif name == "timer_init":
+    elif name == "display_update":
+    elif name == "latch_ctrl":
+    elif name == "display_on":
+    elif name == "start":
+    elif name == "matrix_led":
+    elif name == "ble_led":
+    elif name == "power_led":
+    elif name == "battery_led":
+    else:
+        print('''
+        function unknown
+        ''')    
