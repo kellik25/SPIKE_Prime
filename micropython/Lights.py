@@ -3,7 +3,6 @@ import time
 from array import array
 
 class Lights():
-  #this is for testing but put a docstring here to add help() module
     '''
     fred = Lights()
     fred.battery_led(1,0,0)
@@ -50,6 +49,7 @@ class Lights():
         
     def latch_ctrl(self, dc, mc, bc, fc): #(dc: uint8, mc: uint32, bc: uint32, fc: uint8):
         #dc = dot correction, mc = max current, bc = brightness control, fc - function control
+        #maybe add something that explains what uint8 and uint 32 are??????
         payload= bytearray()
         payload.append(1)                    # bit 768
         payload.append(0x96)                 # bits 760-767
@@ -104,3 +104,13 @@ class Lights():
         self.pixel_set(35, self.fullBrightness*g)
         self.pixel_set(36, self.fullBrightness*b)
         self.display_update()
+        
+    #this is testing comment out later 
+    #def full_test(self):
+    #    for i in range(48):
+    #        for b in range(0,self.fullBrightness,128):
+    #            self.pixel_set(i,b)
+    #            self.display_update()
+    #            time.sleep(0.001)
+    #        time.sleep(0.1)
+    #        if i: self.pixel_set(i-1,0)
