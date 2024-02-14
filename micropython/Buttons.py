@@ -3,7 +3,6 @@ import pyb
 #figure out formating inside docstrings better too
 #double check that right on what each function does in this class
 
-#think the name of the classes need to change because its confusing to do Sound.Sound, Button.Button, etc.; for using from Sound import Sound
 class Buttons():
     '''
     This class controls the button functions of the spike prime hub
