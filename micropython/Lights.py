@@ -4,12 +4,7 @@ from array import array
 
 class Lights():
     '''
-    fred = Lights()
-    fred.battery_led(1,0,0)
-    fred.power_led(0,0,1)
-    fred.ble_led(0,1,0)
-    fred.matrix_led(2,2)
-    fred.full_test()
+    This class controls the light functions of the spike prime hub
     '''
     def __init__(self):
         self.pixel_lut = [9,11,6,1,14,10,19,8,0,26,23,18,3,2,24,21,20,15,13,25,22,7,17,12,38,27,28,29,39,40,41,42,43,44,45,46,47]
