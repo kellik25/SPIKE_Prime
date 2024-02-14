@@ -15,9 +15,12 @@ class Sound():
         
     def play(self, freq, duration):
         '''
-        This function plays a sound at the frequency inputted for the inputted number of seconds
-        :param freq: integer
-        :param duration: integer
+        play(freq, duration)
+        This function plays a sound
+        
+        Args:
+            freq (integer) = pitch (frequency) of the sound
+            duration (integer) = time for sound to play
         '''
         self.tim.freq(freq*len(self.buf))
         self.dac.write_timed(self.buf, self.tim, mode=pyb.DAC.CIRCULAR)
