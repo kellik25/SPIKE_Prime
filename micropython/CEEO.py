@@ -1,9 +1,9 @@
 from Buttons import Buttons
 from Sound import Sound
-import Lights
-import Help
+from Lights import Lights
+from Help import help
 
-l = Lights.Lights()
+l = Lights()
 #l.display_on() what does this do does not output anything
 #l.display_update()
 #l.start()
@@ -22,7 +22,7 @@ print(b.search(measured_value))
 print(b.read())
 
 #find way to get rid of the Help.help so that it is just help
-Help.help("read")
+help("read")
 
 #s = Sound.Sound()
 s = Sound()
