@@ -5,6 +5,9 @@ import pyb
 
 #think the name of the classes need to change because its confusing to do Sound.Sound, Button.Button, etc.; for using from Sound import Sound
 class Buttons():
+    '''
+    This class controls the button functions of the spike prime hub
+    '''
     def __init__(self):
         self.btns = pyb.ADC(pyb.Pin('A1'))
         #is the bluetooth button contained in this one?
