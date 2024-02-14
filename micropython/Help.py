@@ -31,11 +31,11 @@ def help(name):
     elif name == "set":
         print('''
         set(led, value=256*256-1)
-        This function sets the LED at the specified index to a particular color
+        This function sets the LED at the specified index to a particular brightness value
         
         Args:
             led (integer) = index for the LED
-            value (integer) = 16-bit value respresenting a color
+            value (integer) = 16-bit value respresenting a brightness
         ''')
     elif name == "pixel_set":
         print('''
@@ -44,7 +44,7 @@ def help(name):
         
         Args:
             led (integer) = index for the LED
-            value (integer) = 16-bit value representating a color
+            value (integer) = 16-bit value representating a brightness
         
         Returns:
             -1 if index is not in range otherwise no return
@@ -82,7 +82,7 @@ def help(name):
     elif name == "start":
         print('''
         start()
-        This function turns the ble and power leds on
+        This function turns the ble, power, and battery leds on
         ''')
     elif name == "matrix_led":
         print('''
