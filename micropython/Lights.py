@@ -24,11 +24,11 @@ class Lights():
     def set(self, led, value = 256*256-1):
         '''
         set(led, value=256*256-1)
-        This function sets the LED at the specified index to a particular color
+        This function sets the LED at the specified index to a particular brightness value
         
         Args:
             led (integer) = index for the LED
-            value (integer) = 16-bit value respresenting a color
+            value (integer) = 16-bit value respresenting a brightness
         '''
         self.display[led * 2] = value&0xFF
         self.display[led * 2 + 1] = (value >> 8)&0xFF
@@ -40,7 +40,7 @@ class Lights():
         
         Args:
             led (integer) = index for the LED
-            value (integer) = 16-bit value representating a color
+            value (integer) = 16-bit value representating a brightness
         
         Returns:
             -1 if index is not in range otherwise no return
@@ -117,7 +117,7 @@ class Lights():
     def start(self):
         '''
         start()
-        This function turns the ble and power leds on
+        This function turns the ble, power, and battery leds on
         '''
         self.pixel_set(25)
         self.pixel_set(26)
