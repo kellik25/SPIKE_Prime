@@ -1,8 +1,5 @@
 import pyb
 
-#figure out formating inside docstrings better too
-#double check that right on what each function does in this class
-
 class Buttons():
     '''
     This class controls the button functions of the spike prime hub
@@ -16,10 +13,17 @@ class Buttons():
         
     def search(self, measured):
         '''
+        search(measured)
         This function finds and retuns the button state that matches the inputted measurement
-        The state is returned as a list of the buttons: [left, center, right, bluetooth]
-        :param measured: integer
-        :return btn: list of integers
+        
+        Args:
+            measured(integer) = button value state to match
+            
+        Returns:
+            btn (list) = list of booleans representaing button states[left, center, right, bluetooth]
+            
+        Note:
+            Boolean values written as 1s and 0s
         '''
         min = 100000000
         for num,btns in self.lut.items():
@@ -31,8 +35,14 @@ class Buttons():
     
     def read(self):
             '''
-            This function returns the current state of the buttons as 1s and 0s in a list
-            [left, center, right, bluetooth]
+            read()
+            This function returns the current state of the buttons
+            
+            Returns:
+                a (list) = list of booleans representating button states [left, center, right, bluetooth]
+            
+            Note:
+                Boolean values written as 1s and 0s
             '''
             b = self.btns.read()#>>4
             #center button is not registering when pushed
