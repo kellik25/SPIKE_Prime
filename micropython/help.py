@@ -1,5 +1,4 @@
 from Sound import Sound
-#import Sound
 from Buttons import Buttons
 from Lights import Lights
 
